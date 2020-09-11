@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Weather app">
+        <meta name="theme-color" content="#32e098" />
+        <link rel="stylesheet" href="./styles/main.css">
+        <link rel="manifest" href="./manifest.json">
+        <title> Weather App</title>
+    </head>
+    <body>
+        <div class="app-wrap">
+            <header>
+                <input type="text" autocomplete="off" class="search-box" placeholder=" search for location ...." onkeypress="setQuery(event)"/>
+                <h5 class='error'></h5>
+            </header>
+                <main>
+                    <section class="location"> 
+                        <div class="city"> Nigeria, GB</div>
+                        <div class="date"> Wednesday 9 January 2020</div>
+                   </section>
+                   <div class="current"> 
+                    <div class="temp">15<span>&#176;c</span></div>
+                    <div class="weather">Raining</div>
+                    <div class="hi-low">13&#176;c / 16&#176;c</div>
+                   </div>
+               </main>
+        </div>
+    </body>
+    <script src= "./script/app.js"></script>
+</html>
